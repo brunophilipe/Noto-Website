@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- <link rel="icon" href="/software/noto/favicon.ico"> -->
+
+	<title>Noto</title>
+
+	<link href="/software/noto/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/software/noto/css/navbar-fixed-top.css" rel="stylesheet">
+	<link href="/software/noto/css/noto.css" rel="stylesheet">
+
+  <body>
+
+    	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/software/noto/">Noto</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/software/noto/#download">Download</a></li>
+					<li><a href="/software/noto/#themes">Themes</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/software/noto/themes/">About Themes</a></li>
+							<li><a href="/software/noto/themes/#custom-editor-themes">Creating Themes</a></li>
+							<li><a href="/software/noto/themes/#importing-custom-themes">Importing Themes</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="/software/noto/all-releases">All Releases</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li id="menu-github"><a href="https://github.com/brunophilipe/Noto" rel="noopener noreferrer">GitHub</a></li>
+					<li><a href="https://www.brunophilipe.com/contact" rel="noopener noreferrer">Contact</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="container-fluid features-dark page">
+	<div class="container">
+	<h3 id="themes-in-noto">Themes in Noto</h3>
+
+<p>Noto has a flexible theming engine that allows you to entirely modify the appearance of the editor windows. You can also export the themes you create to files and share them, and also import theme files created by other users so you can use them yourself.</p>
+
+<hr />
+
+<ol>
+  <li>In Noto, choose Noto &gt; Preferences….</li>
+  <li>On the Preferences panel, select the “Theme” tab.</li>
+</ol>
+
+<hr />
+
+<figure style="text-align: center;"><img src="/software/noto/images/themes-preferences.png" data-rjs="/software/noto/images/themes-preferences@2x.png" alt="Noto preferences panel showing the themes controls" style="width: 100%; max-width: 592px;" /></figure>
+
+<table class="table">
+	<caption>The following controls are visible in this panel:</caption>
+	<thead>
+		<tr>
+			<th colspan="4">Control Label</th>
+			<th>Type</th>
+			<th colspan="6">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="4">Theme</td>
+			<td>Popup Button</td>
+			<td colspan="6">
+				<p>Chooses the theme currently used for all editor windows.</p>
+				<p>The default themes are:</p>
+				<ul>
+					<li><b>Light: </b>A theme with dark text over a light background.</li>
+					<li><b>Dark: </b>A theme with light text over a dark background.</li>
+				</ul>
+				<p>Select &ldquo;Import theme from file&#8230;&rdquo; to import a theme from a file. <a href="#/custom-themes">Read more</a>.</p>
+				<em>Notice: </em>You can not select different themes for individual editor windows.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" rowspan="2">Editor</td>
+			<td colspan="2">Text Color</td>
+			<td>Color Well</td>
+			<td colspan="6">The color used to draw the file’s text content.</td>
+		</tr>
+		<tr>
+			<td colspan="2">Background Color</td>
+			<td>Color Well</td>
+			<td colspan="6">The color used to draw the background of the file’s text content.</td>
+		</tr>
+		<tr>
+			<td colspan="2" rowspan="2">Lines Counter</td>
+			<td colspan="2">Text Color</td>
+			<td>Color Well</td>
+			<td colspan="6">The color used to draw the text in the lines counter gutter.</td>
+		</tr>
+		<tr>
+			<td colspan="2">Background Color</td>
+			<td>Color Well</td>
+			<td colspan="6">The color used to draw the background of the lines counter gutter.</td>
+		</tr>
+		<tr>
+			<td colspan="4">Editor Preview</td>
+			<td>Text Area</td>
+			<td colspan="6">Displays a quick preview of what the editor windows look like with the currently selected theming options.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 id="custom-editor-themes">Custom editor themes</h3>
+
+<p>Once you modify any of the theme colors, Noto will clone the currently selected theme into a new theme and name it “Theme (Custom)”. You can then give it a different name, or delete it if you wish.</p>
+
+<figure style="text-align: center;"><img src="/software/noto/images/themes-preferences-2.png" data-rjs="/software/noto/images/themes-preferences-2@2x.png" alt="Noto preferences panel with a custom theme selected, and showing the themes controls" style="width: 100%; max-width: 592px;" /></figure>
+
+<table data-type="2 column" aria-label="Custom theme tools" class="table" style="clear: both;">
+	<caption>Once a custom theme is selected, some extra buttons are displayed next to the theme selector control:</caption>
+    <tbody>
+        <tr>
+            <td colspan="4" style="min-width: 180px;">Rename Theme&nbsp;&nbsp;&nbsp;<img src="/software/noto/images/tool-pencil.png" role="text img" alt="n/a" height="12" width="12" /></td>
+            <td colspan="8">Renames the currently selected theme.</td>
+        </tr>
+        <tr>
+            <td colspan="4">Delete Theme&nbsp;&nbsp;&nbsp;<img src="/software/noto/images/tool-garbage.png" role="text img" alt="n/a" height="12" width="12" /></td>
+            <td colspan="8">Deletes the currently selected theme.</td>
+        </tr>
+        <tr>
+            <td colspan="4">Share Theme&nbsp;&nbsp;&nbsp;<img src="/software/noto/images/tool-share.png" role="text img" alt="n/a" height="12" width="12" /></td>
+            <td colspan="8">
+                <p>Exports the currently selected theme to a file.</p>
+                <ol>
+                    <li>
+                        <p>Click&nbsp;&nbsp;&nbsp;<img src="/software/noto/images/tool-share.png" role="text img" alt="n/a" height="12" width="12" /></p>
+                    </li>
+                    <li>
+                        <p>Name the file, <a href="help:anchor='mchlp15236' bookID='com.apple.machelp'" class="URL" target="_blank">add one or more tags</a>, then select a location.</p>
+                        <p>To save your theme file in the Noto folder in iCloud Drive, click the Where pop-up menu, then choose “Noto — iCloud.” If you choose iCloud Drive in the pop-up menu, your theme file is saved in iCloud Drive, but not in the Noto folder. If you don’t see the pop-up menu, click Noto in the iCloud section of the Finder sidebar.</p>
+                    </li>
+                    <li>
+                        <p>Click Export.</p>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<figure style="float: right; width: 258px; margin-bottom: 30px;">
+	<img src="/software/noto/images/color-picker.png" data-rjs="/software/noto/images/color-picker@2x.png" alt="Color picker panel" />
+	<figcaption style="padding: 0 16px; text-align: center;">The color picker panel. Click anywhere on the color wheel to choose a color. <a href="help:anchor='mchlp1190' bookID='com.apple.machelp'">Read more</a>.</figcaption>
+</figure>
+
+<p>To change any of the theme colors, click on the colored rectangle next to the desired label for the color you wish to change and select the desired color from the color picker.</p>
+
+<p>All changes made to the colors are saved instantly and all editor windows are updated automatically.</p>
+
+<div style="clear: both;"></div>
+
+<h4 id="importing-custom-themes">Importing custom themes</h4>
+
+<p>If you have a theme shared with you from another user, or downloaded from Noto’s homepage, you can use it in Noto by importing it from the Theme selector.</p>
+
+<hr />
+
+<ol>
+    <li>
+        <p>Click the Theme selector</p>
+    </li>
+    <li>
+        <p>Choose Import theme from file&#8230;, then navigate to a valid theme file (it has a “.plist” extension).</p>
+        <p>If your theme file is stored in iCloud Drive, you can select Noto in the iCloud section of the Finder sidebar, then double-click your file. For more information about working with files in iCloud, see <a href="help:anchor='mchle5a61431' bookID='com.apple.machelp'" class="URL" target="_blank">Store documents with iCloud Drive</a>.</p>
+    </li>
+    <li>
+        <p>Click “Import Theme”.</p>
+    </li>
+</ol>
+
+<hr />
+	
+	</div>
+</div>
+      </div>
+    </main>
+
+    	<div class="container-fluid">
+		<div class="row" id="footer">
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<p>Noto is open-source software distributed under the GNU Public License v3. Contribute to the development of noto through <a href="https://github.com/brunophilipe/noto">GitHub</a>.</p>
+					<p>Noto and the Noto website were created by Bruno Philipe, All Rights Reserved, 2017.
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-right">
+					<p>iCloud, iCloud Drive, Time Machine, macOS, and Cocoa are products and trademarks of Apple, Inc. Apple is not affiliated to Noto or to Bruno Philipe in any way.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="/software/noto/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="/software/noto/js/bootstrap.min.js"></script>
+	<script type="text/javascript" integrity="sha384-moWN90I6DD72oDsAsCPhqNG10H9Jk5WAYSkHXq7rWl9WqAmNA9t5cW31jyXVEIEp" src="/software/noto/js/retina.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,484 @@
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:medium;
+	font-weight:600;
+	src:local('☺︎'), url("sf-pro-display_medium.woff") format("woff");
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:regular;
+	font-weight:500;
+	src:local('☺︎'), url("sf-pro-display_medium.woff") format("woff");
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+body {
+	padding: 0;
+}
+
+iframe.github {
+	border: 0;
+	overflow: hidden;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.container-fluid h2, .container h2 {
+	margin-top: 40px;
+}
+
+.container-fluid h2 + p, .container h2 + p {
+	margin-bottom: 40px;
+}
+
+.container-header {
+	padding: 20px 0;
+}
+
+.hero {
+	width: 100%;
+	background-color: #DE5C43;
+}
+
+.hero .container {
+	padding-top: 60px;
+}
+
+.hero img.logo {
+	float: left;
+	margin: 20px 20px 20px 0;
+}
+
+.hero h1, .hero h2 {
+	font-family: 'SF Pro Display', 'SF UI Display', Helvetica, sans-serif;
+	text-align: center;
+	text-shadow: 0 5px 36px rgba(0, 0, 0, 0.46);
+}
+
+.hero h1 {
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.hero h2 {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.hero #screenshots-carousel .carousel-inner, .hero #screenshots-carousel .carousel-inner .item img {
+	margin: auto;
+}
+
+.features-light {
+	padding: 0;
+	background-color: #ffffff;
+}
+
+.features-light .container {
+	background-color: #f8f8f8;
+}
+
+.features-light h1, .features-light h2, .features-light h3, .features-light h4, .features-light h5 {
+	color: #000;
+}
+
+.features-light hr {
+	margin-top: 30px;
+	border-color: #ddd;
+}
+
+.features-blue {
+	padding: 0;
+	background-color: #1c6b90;
+}
+
+.features-blue .container {
+	background-color: #1c6b90;
+	color: #ffffff;
+}
+
+.features-blue .container a {
+
+}
+
+.features-blue h1, .features-blue h2, .features-blue h3, .features-blue h4, .features-blue h5 {
+	color: #ffffff;
+}
+
+.features-blue hr {
+	margin-top: 30px;
+	border-color: #ddd;
+}
+
+.feature img {
+	max-width: 100%;
+	height: auto;
+}
+
+.feature.right.attached {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.feature.right.attached img {
+	float: right;
+}
+
+.feature.right.attached h3, .feature.right.attached p {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.feature h3 {
+	margin-top: -10px;
+}
+
+.feature {
+	clear: both;
+	text-align: center;
+}
+
+.container#download {
+	padding-bottom: 40px;
+}
+
+.page {
+	padding-top: 50px;
+}
+
+.page h3 {
+	padding-top: 60px;
+}
+
+.page h3:first-of-type {
+	padding-top: initial;
+}
+
+#download-button {
+	width: 340px;
+	display: inline-block;
+	padding: 20px 16px 16px 16px;
+	margin: 20px 0 6px;
+	background-color: #131313;
+	border-radius: 4px;
+	cursor: pointer;
+	border: 1px solid #131313;
+	background-image: url(../images/download.png);
+	background-size: 48px;
+	background-position: 270px center;
+	background-repeat: no-repeat;
+}
+
+#download-button:hover {
+	text-decoration: none;
+	background-color: #333333;
+	border: 1px solid #ddd;
+	background-image: url(../images/download_hover.png);
+}
+
+#download-button p {
+	text-align: left;
+	font-size: 15px;
+	color: #eee;
+	margin: 0 0 4px;
+}
+
+#download-button p.title {
+	font-weight: bold;
+}
+
+#download-button p.desc {
+	font-size: 12px;
+}
+
+#download-button p.date {
+	font-size: 10px;
+}
+
+#download-button img {
+	float: left;
+	margin-right: 16px;
+}
+
+#past-releases {
+	padding: 0;
+}
+
+#past-releases li {
+	display: block;
+}
+
+#past-releases a {
+	display: block;
+	color: #eee;
+	background-color: #131313;
+	border: 1px solid #131313;
+	padding: 12px 6px 0px;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+#past-releases a:hover {
+	text-decoration: none;
+	background-color: #333333;
+	border: 1px solid #ddd;
+}
+
+#past-releases p {
+	font-size: 12px;
+}
+
+#past-releases a .title {
+	font-weight: bold;
+}
+
+.page #past-releases a {
+	color: #111;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 12px 6px 0px 16px;
+	
+	background-image: url(../images/download_hover.png);
+	background-size: 48px;
+	background-position: right 20px center;
+	background-repeat: no-repeat;
+}
+
+.page #past-releases a:hover {
+	background-color: #ddd;
+	background-image: url(../images/download.png);
+}
+
+#open-source {
+	padding-bottom: 60px;
+}
+
+#themes {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#themes #themes-header a {
+	display: block;
+	margin: 10px 0 0;
+}
+
+#themes .theme-entry {
+	display: inline-block;
+	background-color: #111;
+	margin: 10px 8px;
+	border-radius: 5px;
+}
+
+#themes .theme-entry p {
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+#themes .theme-entry img {
+	max-width: 513px;
+	width: 100%;
+}
+
+#themes.themes-normal .theme-entry img.theme-alt {
+	display: none;
+}
+
+#themes.themes-alt .theme-entry img.theme-normal {
+	display: none;
+}
+
+#themes .theme-entry a {
+	width: 100%;
+	font-size: 14px;
+	padding: 6px 10px;
+	border-radius: 5px;
+	position: relative;
+	bottom: 30px;
+	border: 1px solid;
+}
+
+#themes .theme-entry a:hover {
+	text-decoration: none;
+	background-color: #2a9fd6;
+	color: #eee;
+	border-color: #2a9fd6;
+}
+
+.row#footer {
+	background-color: #282828;
+	padding-top: 40px;
+	padding-bottom: 60px;
+
+	color: #bbbbbb;
+}
+
+.row#footer .container {
+
+}
+
+#menu-github a {
+	background-image: url(../images/github.png);
+	background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 22px;
+}
+
+#menu-github a:hover {
+	background-image: url(../images/github_hover.png);
+}
+
+/* HELPERS */
+
+.val-helper {
+	height: 100%; 
+	width: 1px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.flipflop-a {
+	display: initial;
+}
+
+.flipflop-b {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.hero {
+		height: 100vh;
+	}
+
+	.hero #screenshots-carousel {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 190px;
+		bottom: 0;
+	}
+
+	.hero #screenshots-carousel .carousel-inner, .hero #screenshots-carousel .carousel-inner .item {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.hero #screenshots-carousel .carousel-inner .item img {
+		margin: auto;
+		display: inline-block; 
+		vertical-align: middle;
+	}
+
+	.feature.right.attached h3, .feature.right.attached p {
+		clear: right;
+	}
+
+	.footer-right {
+		text-align: center;
+	}
+}
+
+@media (min-width: 769px) {
+	.hero h1 {
+		font-size: 60px;
+	}
+
+	.hero h2 {
+		font-size: 30px;
+	}
+
+	.main-features hr {
+		display: none;
+	}
+
+	.feature {
+		clear: both;
+	}
+
+	.feature h3 {
+		padding-top: 40px;
+		margin-top: initial;
+		margin-bottom: 20px;
+	}
+
+	.feature.left img {
+		float: left;
+	}
+
+	.feature.right img {
+		float: right;
+	}
+
+	.feature.right h3, .feature.right p {
+		text-align: right;
+	}
+
+	.feature.left h3, .feature.left p {
+		text-align: left;
+	}
+
+	#themes #themes-header a {
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+	.footer-right {
+		text-align: right;
+	}
+}
+
+@media (min-width: 992px) {
+	.feature h3 {
+		padding-top: 60px;
+		margin-bottom: 30px;
+	}
+
+	.feature.right p {
+		margin-left: 20%;
+	}
+
+	.feature.left p {
+		margin-right: 20%;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+    #download-button {
+		background-image: url(../images/download@2x.png);
+	}
+	
+	#download-button:hover {
+		background-image: url(../images/download_hover@2x.png);
+	}
+	
+	#menu-github a {
+		background-image: url(../images/github@2x.png);
+	}
+	
+	#menu-github a:hover {
+		background-image: url(../images/github_hover@2x.png);
+	}
+	
+	.page #past-releases a {
+		background-image: url(../images/download_hover@2x.png);
+	}
+	
+	.page #past-releases a:hover {
+		background-image: url(../images/download@2x.png);
+	}
+}

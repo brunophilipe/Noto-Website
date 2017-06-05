@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- <link rel="icon" href="/software/noto/favicon.ico"> -->
+
+	<title>Noto</title>
+
+	<link href="/software/noto/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/software/noto/css/navbar-fixed-top.css" rel="stylesheet">
+	<link href="/software/noto/css/noto.css" rel="stylesheet">
+
+  <body>
+
+    	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/software/noto/">Noto</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/software/noto/#download">Download</a></li>
+					<li><a href="/software/noto/#themes">Themes</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/software/noto/themes/">About Themes</a></li>
+							<li><a href="/software/noto/themes/#custom-editor-themes">Creating Themes</a></li>
+							<li><a href="/software/noto/themes/#importing-custom-themes">Importing Themes</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="/software/noto/all-releases">All Releases</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li id="menu-github"><a href="https://github.com/brunophilipe/Noto" rel="noopener noreferrer">GitHub</a></li>
+					<li><a href="https://www.brunophilipe.com/contact" rel="noopener noreferrer">Contact</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        	
+	
+	<div class="hero">
+		<div class="container">
+			<h1>Noto</h1>
+			<h2>The plain text editor for macOS</h2>
+		</div>
+		<div id="screenshots-carousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#screenshots-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#screenshots-carousel" data-slide-to="1"></li>
+				<li data-target="#screenshots-carousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="val-helper"></div>
+					<img alt="Noto screenshot 1" src="images/noto_screenshot_1.png" data-rjs="images/noto_screenshot_1@2x.png" />
+				</div>
+				<div class="item">
+					<div class="val-helper"></div>
+					<img alt="Noto screenshot 2" src="images/noto_screenshot_2.png" data-rjs="images/noto_screenshot_2@2x.png" />
+				</div>
+				<div class="item">
+					<div class="val-helper"></div>
+					<img alt="Noto screenshot 3" src="images/noto_screenshot_3.png" data-rjs="images/noto_screenshot_3@2x.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid features-dark">
+		<div class="container" id="download">
+			<div class="text-center container-header">
+				<h2>Download</h2>
+				<p>Noto is compatible with macOS Sierra (10.12) or newer.</p>
+			</div>
+			<div class="text-center">
+				
+				<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+					<h5>Latest release:</h5>
+					
+						
+						<a href="releases/noto-1.0-793.dmg" id="download-button">
+							<img src="images/dmg_64.png" data-rjs="images/dmg_64@2x.png" alt="Noto dmg package icon">
+							<p class="title">Noto 1.0 (793)</p>
+							<p class="desc">noto-1.0-793.dmg (5.8 MB)</p>
+							<p class="date">Jun 4, 2017 18:52</p>
+						</a>
+						<p class="small">The download consists of a signed DMG container. <a href="/software/noto/all-releases">Read more</a>.</p>
+					
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+					<h5>Previous releases:</h5>
+					
+					<ul id="past-releases">
+						
+							<li>
+								<a href="releases/noto-1.0.dmg">
+									<p><span class="title">Noto 1.0 (792) &mdash; Jun 4, 2017 05:03</span></p>
+									<p class="small">noto-1.0.dmg (5.8 MB)</p>
+								</a>
+							</li>
+						
+					</ul>
+					
+					<p class="small"><a href="/software/noto/all-releases">See all</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid features-light main-features">
+		<div class="container">
+			<div class="text-center" class="container-header">
+				<h2>Simple</h2>
+				<p>Noto is a simple general-purpose text editor with a few focused features</p>
+			</div>
+			<hr>
+			<div class="feature left">
+				<img src="images/screenshot_feat_encodings.png" data-rjs="images/screenshot_feat_encodings@2x.png">
+				<h3>Extensive Encoding Support</h3>
+				<p>Noto supports a wide range of different encodings by making use of the powerful Cocoa API.</p>
+				<p>This means Noto can support files containing text and characters from many different scripts and encodings, from Japanese characters to mathematical symbols.
+			</div>
+			<hr>
+			<div class="feature right attached">
+				<img class="flipflop-a" src="images/screenshot_feat_indentation_1.png" data-rjs="images/screenshot_feat_indentation_1@2x.png">
+				<img class="flipflop-b" src="images/screenshot_feat_indentation_2.png" data-rjs="images/screenshot_feat_indentation_2@2x.png">
+				<h3>Smart Multi-Selection<br>Indentation</h3>
+				<p>Quickly change the indentation of multiple chunks of text with a single key-stroke. Insert tab characters or any number of space characters.</p>
+			</div>
+			<hr>
+			<div class="feature left">
+				<img src="images/screenshot_feat_invisibles.png" data-rjs="images/screenshot_feat_invisibles@2x.png">
+				<h3>Invisible Characters</h3>
+				<p>Highlights those pesky spaces, tabs, and newlines, so you know they're there even if you can not see them.</p>
+			</div>
+			<hr>
+			<div class="feature right attached">
+				<img src="images/screenshot_feat_icloud.png" data-rjs="images/screenshot_feat_icloud@2x.png">
+				<h3>iCloud Drive<br>Integration</h3>
+				<p>Noto is fully integrated into the latest features of macOS including iCloud Drive and Time Machine versioning, so you can rest asured your files are always there when you need them.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid features-blue">
+		<div class="container" id="open-source">
+			<div id="open-source-header">
+				<img class="appicon float-right hidden-md hidden-lg" src="images/icon_128.png" data-rjs="images/icon_128@2x.png">
+				<img class="appicon float-right hidden-xs hidden-sm" src="images/icon_128@2x.png" data-rjs="images/icon_128@4x.png">
+				<h2>Open Source</h2>
+				<p>Noto is Free Software distributed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener noreferrer">GPLv3 license</a>.</p>
+				<p>Noto is entirely written in Swift, with the addition of some third-party libraries written in Swift/Objective-C. Because Noto is free software, you can clone, change, and contribute to the source code. Visit Noto’s repository on <a href="https://github.com/brunophilipe/Noto" rel="noopener noreferrer">GitHub</a>.</p>
+				<p style="padding-top: 30px;">
+					<iframe class="github" src="github-btn.html?user=brunophilipe&amp;repo=Noto&amp;type=follow" width="162" height="22"></iframe>
+					<iframe class="github" src="github-btn.html?user=brunophilipe&amp;repo=Noto&amp;type=fork&amp;count=true" width="100" height="22"></iframe>
+					<iframe class="github" src="github-btn.html?user=brunophilipe&amp;repo=Noto&amp;type=watch&amp;count=true" width="100" height="22"></iframe>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+		<div id="themes" class="themes-normal">
+			<div id="themes-header" class="container-header">
+				<h2>Themes</h2>
+				<p>Customize your editor with some extra themes.</p>
+				<p>
+					<a href="/software/noto/themes/#importing-custom-themes">How to install custom themes.</a>
+					<a href="/software/noto/themes/#custom-editor-themes">How to make your own.</a>
+				</p>
+			</div>
+			
+			
+				<div class="theme-entry">
+					<p>Passionfruit</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Passionfruit.png" data-rjs="/software/noto/images/themes/Passionfruit@2x.png">
+					<br>
+					<a href="/software/noto/themes/Passionfruit.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Maxx</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Maxx.png" data-rjs="/software/noto/images/themes/Maxx@2x.png">
+					<br>
+					<a href="/software/noto/themes/Maxx.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Aadvark</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Aadvark.png" data-rjs="/software/noto/images/themes/Aadvark@2x.png">
+					<br>
+					<a href="/software/noto/themes/Aadvark.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Blueness</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Blueness.png" data-rjs="/software/noto/images/themes/Blueness@2x.png">
+					<br>
+					<a href="/software/noto/themes/Blueness.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>C64</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/C64.png" data-rjs="/software/noto/images/themes/C64@2x.png">
+					<br>
+					<a href="/software/noto/themes/C64.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Cool Ember</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Cool_Ember.png" data-rjs="/software/noto/images/themes/Cool_Ember@2x.png">
+					<br>
+					<a href="/software/noto/themes/Cool Ember.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Greenery</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Greenery.png" data-rjs="/software/noto/images/themes/Greenery@2x.png">
+					<br>
+					<a href="/software/noto/themes/Greenery.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Brewer</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Brewer.png" data-rjs="/software/noto/images/themes/Brewer@2x.png">
+					<br>
+					<a href="/software/noto/themes/Brewer.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Violet</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Violet.png" data-rjs="/software/noto/images/themes/Violet@2x.png">
+					<br>
+					<a href="/software/noto/themes/Violet.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Man</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Man.png" data-rjs="/software/noto/images/themes/Man@2x.png">
+					<br>
+					<a href="/software/noto/themes/Man.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Maco’s</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Maco_s.png" data-rjs="/software/noto/images/themes/Maco_s@2x.png">
+					<br>
+					<a href="/software/noto/themes/Maco’s.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Red Alert</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Red_Alert.png" data-rjs="/software/noto/images/themes/Red_Alert@2x.png">
+					<br>
+					<a href="/software/noto/themes/Red Alert.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Slime</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Slime.png" data-rjs="/software/noto/images/themes/Slime@2x.png">
+					<br>
+					<a href="/software/noto/themes/Slime.plist">Download</a>
+				</div>
+			
+				<div class="theme-entry">
+					<p>Woodfire</p>
+					
+					<img class="theme-normal" src="/software/noto/images/themes/Woodfire.png" data-rjs="/software/noto/images/themes/Woodfire@2x.png">
+					<br>
+					<a href="/software/noto/themes/Woodfire.plist">Download</a>
+				</div>
+			
+		</div>
+	</div> <!-- /container -->
+	<script type="text/javascript">
+		
+	var fliflopState = false;
+
+	setInterval(function () {
+
+		$('.flipflop-a').css('display', (fliflopState ? 'none' : 'initial'));
+		$('.flipflop-b').css('display', (fliflopState ? 'initial' : 'none'));
+
+		fliflopState = !fliflopState;
+
+	}, 1500);
+
+	</script>
+
+      </div>
+    </main>
+
+    	<div class="container-fluid">
+		<div class="row" id="footer">
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<p>Noto is open-source software distributed under the GNU Public License v3. Contribute to the development of noto through <a href="https://github.com/brunophilipe/noto">GitHub</a>.</p>
+					<p>Noto and the Noto website were created by Bruno Philipe, All Rights Reserved, 2017.
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-right">
+					<p>iCloud, iCloud Drive, Time Machine, macOS, and Cocoa are products and trademarks of Apple, Inc. Apple is not affiliated to Noto or to Bruno Philipe in any way.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="/software/noto/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="/software/noto/js/bootstrap.min.js"></script>
+	<script type="text/javascript" integrity="sha384-moWN90I6DD72oDsAsCPhqNG10H9Jk5WAYSkHXq7rWl9WqAmNA9t5cW31jyXVEIEp" src="/software/noto/js/retina.js"></script>
+
+  </body>
+
+</html>
