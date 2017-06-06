@@ -294,7 +294,7 @@ iframe.github {
 	border-radius: 5px;
 }
 
-#themes .theme-entry p {
+#themes .theme-entry p:first-of-type {
 	padding-top: 20px;
 	font-size: 18px;
 }
