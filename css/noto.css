@@ -208,6 +208,22 @@ iframe.github {
 	margin-right: 16px;
 }
 
+.appstore {
+	padding-bottom: 20px;
+}
+
+.appstore p {
+	font-size: 12px;
+}
+
+#appstore-badge-container {
+	text-align: center;
+}
+
+#appstore-badge {
+	margin-top: 25px;
+}
+
 #past-releases {
 	padding: 0;
 }
@@ -453,6 +469,10 @@ iframe.github {
 
 	.feature.left p {
 		margin-right: 20%;
+	}
+	
+	#appstore-badge-container {
+		text-align: right;
 	}
 }
 
